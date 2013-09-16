@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2240CEF817E750710065C648 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2240CEF717E750710065C648 /* UIKit.framework */; };
+		2240CEFA17E750710065C648 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2240CEF917E750710065C648 /* Foundation.framework */; };
+		2240CEFC17E750710065C648 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2240CEFB17E750710065C648 /* CoreGraphics.framework */; };
+		2240CF0217E750710065C648 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2240CF0017E750710065C648 /* InfoPlist.strings */; };
+		2240CF0417E750710065C648 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240CF0317E750710065C648 /* main.m */; };
+		2240CF0817E750710065C648 /* JiPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240CF0717E750710065C648 /* JiPAppDelegate.m */; };
+		2240CF0A17E750710065C648 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2240CF0917E750710065C648 /* Default.png */; };
+		2240CF0C17E750710065C648 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2240CF0B17E750710065C648 /* Default@2x.png */; };
+		2240CF0E17E750710065C648 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2240CF0D17E750710065C648 /* Default-568h@2x.png */; };
+		2240CF1117E750710065C648 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2240CF0F17E750710065C648 /* MainStoryboard.storyboard */; };
+		2240CF1417E750710065C648 /* JiPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240CF1317E750710065C648 /* JiPMainViewController.m */; };
+		2240CF1717E750710065C648 /* JiPFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240CF1617E750710065C648 /* JiPFlipsideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2240CEF417E750710065C648 /* jiraphone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jiraphone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2240CEF717E750710065C648 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2240CEF917E750710065C648 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2240CEFB17E750710065C648 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2240CEFF17E750710065C648 /* jiraphone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jiraphone-Info.plist"; sourceTree = "<group>"; };
+		2240CF0117E750710065C648 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2240CF0317E750710065C648 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2240CF0517E750710065C648 /* jiraphone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jiraphone-Prefix.pch"; sourceTree = "<group>"; };
+		2240CF0617E750710065C648 /* JiPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiPAppDelegate.h; sourceTree = "<group>"; };
+		2240CF0717E750710065C648 /* JiPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiPAppDelegate.m; sourceTree = "<group>"; };
+		2240CF0917E750710065C648 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2240CF0B17E750710065C648 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2240CF0D17E750710065C648 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2240CF1017E750710065C648 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		2240CF1217E750710065C648 /* JiPMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiPMainViewController.h; sourceTree = "<group>"; };
+		2240CF1317E750710065C648 /* JiPMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiPMainViewController.m; sourceTree = "<group>"; };
+		2240CF1517E750710065C648 /* JiPFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiPFlipsideViewController.h; sourceTree = "<group>"; };
+		2240CF1617E750710065C648 /* JiPFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiPFlipsideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2240CEF117E750710065C648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240CEF817E750710065C648 /* UIKit.framework in Frameworks */,
+				2240CEFA17E750710065C648 /* Foundation.framework in Frameworks */,
+				2240CEFC17E750710065C648 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2240CEEB17E750710065C648 = {
+			isa = PBXGroup;
+			children = (
+				2240CEFD17E750710065C648 /* jiraphone */,
+				2240CEF617E750710065C648 /* Frameworks */,
+				2240CEF517E750710065C648 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2240CEF517E750710065C648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2240CEF417E750710065C648 /* jiraphone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2240CEF617E750710065C648 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2240CEF717E750710065C648 /* UIKit.framework */,
+				2240CEF917E750710065C648 /* Foundation.framework */,
+				2240CEFB17E750710065C648 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2240CEFD17E750710065C648 /* jiraphone */ = {
+			isa = PBXGroup;
+			children = (
+				2240CF0617E750710065C648 /* JiPAppDelegate.h */,
+				2240CF0717E750710065C648 /* JiPAppDelegate.m */,
+				2240CF0F17E750710065C648 /* MainStoryboard.storyboard */,
+				2240CF1217E750710065C648 /* JiPMainViewController.h */,
+				2240CF1317E750710065C648 /* JiPMainViewController.m */,
+				2240CF1517E750710065C648 /* JiPFlipsideViewController.h */,
+				2240CF1617E750710065C648 /* JiPFlipsideViewController.m */,
+				2240CEFE17E750710065C648 /* Supporting Files */,
+			);
+			path = jiraphone;
+			sourceTree = "<group>";
+		};
+		2240CEFE17E750710065C648 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2240CEFF17E750710065C648 /* jiraphone-Info.plist */,
+				2240CF0017E750710065C648 /* InfoPlist.strings */,
+				2240CF0317E750710065C648 /* main.m */,
+				2240CF0517E750710065C648 /* jiraphone-Prefix.pch */,
+				2240CF0917E750710065C648 /* Default.png */,
+				2240CF0B17E750710065C648 /* Default@2x.png */,
+				2240CF0D17E750710065C648 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2240CEF317E750710065C648 /* jiraphone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2240CF1A17E750710065C648 /* Build configuration list for PBXNativeTarget "jiraphone" */;
+			buildPhases = (
+				2240CEF017E750710065C648 /* Sources */,
+				2240CEF117E750710065C648 /* Frameworks */,
+				2240CEF217E750710065C648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jiraphone;
+			productName = jiraphone;
+			productReference = 2240CEF417E750710065C648 /* jiraphone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2240CEEC17E750710065C648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JiP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tim Panton";
+			};
+			buildConfigurationList = 2240CEEF17E750710065C648 /* Build configuration list for PBXProject "jiraphone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2240CEEB17E750710065C648;
+			productRefGroup = 2240CEF517E750710065C648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2240CEF317E750710065C648 /* jiraphone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2240CEF217E750710065C648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240CF0217E750710065C648 /* InfoPlist.strings in Resources */,
+				2240CF0A17E750710065C648 /* Default.png in Resources */,
+				2240CF0C17E750710065C648 /* Default@2x.png in Resources */,
+				2240CF0E17E750710065C648 /* Default-568h@2x.png in Resources */,
+				2240CF1117E750710065C648 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2240CEF017E750710065C648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2240CF0417E750710065C648 /* main.m in Sources */,
+				2240CF0817E750710065C648 /* JiPAppDelegate.m in Sources */,
+				2240CF1417E750710065C648 /* JiPMainViewController.m in Sources */,
+				2240CF1717E750710065C648 /* JiPFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2240CF0017E750710065C648 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2240CF0117E750710065C648 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2240CF0F17E750710065C648 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2240CF1017E750710065C648 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2240CF1817E750710065C648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2240CF1917E750710065C648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2240CF1B17E750710065C648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jiraphone/jiraphone-Prefix.pch";
+				INFOPLIST_FILE = "jiraphone/jiraphone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2240CF1C17E750710065C648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jiraphone/jiraphone-Prefix.pch";
+				INFOPLIST_FILE = "jiraphone/jiraphone-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2240CEEF17E750710065C648 /* Build configuration list for PBXProject "jiraphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2240CF1817E750710065C648 /* Debug */,
+				2240CF1917E750710065C648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2240CF1A17E750710065C648 /* Build configuration list for PBXNativeTarget "jiraphone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2240CF1B17E750710065C648 /* Debug */,
+				2240CF1C17E750710065C648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2240CEEC17E750710065C648 /* Project object */;
+}
