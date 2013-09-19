@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2546" systemVersion="12A248" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1876"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier Main View Controller-->
+        <!--JiP Main View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="JiPMainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" hasAttributedTitle="NO" lineBreakMode="middleTruncation" id="10">
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
-                                <state key="normal">
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="Exl-mp-odz"/>
+                                    <constraint firstAttribute="width" constant="18" id="uHK-6f-8Dm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" image="phono-slide-icon57.png">
                                     <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="6" kind="modal" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="11"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhK-il-2uh">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="apl-1S-UOC"/>
-                            <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bcr-if-aDO"/>
+                            <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9KK-8R-5Z7"/>
+                            <constraint firstItem="10" firstAttribute="top" secondItem="MhK-il-2uh" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Fyh-yb-k96"/>
+                            <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="K8M-Q1-N8J"/>
+                            <constraint firstItem="MhK-il-2uh" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Ynh-yN-2IW"/>
+                            <constraint firstItem="MhK-il-2uh" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="uFQ-lD-Yyd"/>
+                            <constraint firstItem="MhK-il-2uh" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="w30-wy-OpH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="jira" destination="MhK-il-2uh" id="qzC-x1-FMi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="182"/>
         </scene>
-        <!--class Prefix:identifier Flipside View Controller-->
+        <!--JiP Flipside View Controller-->
         <scene sceneID="9">
             <objects>
                 <viewController id="6" customClass="JiPFlipsideViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar translatesAutoresizingMaskIntoConstraints="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="12">
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="12">
                                 <items>
-                                    <navigationItem title="Title" id="13">
+                                    <navigationItem title="Phono" id="13">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="14">
                                             <connections>
                                                 <action selector="done:" destination="6" id="16"/>
@@ -56,11 +70,109 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TEI-Me-dDc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="QCO-f3-jFf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="key:" destination="6" eventType="valueChanged" id="1GI-cc-FdM"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwD-k3-Jm8">
+                                <segments>
+                                    <segment title="7"/>
+                                    <segment title="8"/>
+                                    <segment title="9"/>
+                                </segments>
+                                <connections>
+                                    <action selector="key:" destination="6" eventType="valueChanged" id="bG7-ry-vSr"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ENI-yx-V0Q">
+                                <segments>
+                                    <segment title="*"/>
+                                    <segment title="0"/>
+                                    <segment title="#"/>
+                                </segments>
+                                <connections>
+                                    <action selector="key:" destination="6" eventType="valueChanged" id="YxW-eH-jt4"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eHa-dS-RCV">
+                                <segments>
+                                    <segment title="4"/>
+                                    <segment title="5"/>
+                                    <segment title="6"/>
+                                </segments>
+                                <connections>
+                                    <action selector="key:" destination="6" eventType="valueChanged" id="nqS-dn-hTb"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RRP-uL-Pb7">
+                                <connections>
+                                    <action selector="mute:" destination="6" eventType="valueChanged" id="BwE-AN-Ml6"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MUTE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-Hc-djQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErT-oD-hl1">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.6412618886" green="0.1652867613" blue="0.1501641407" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="call" destination="6" eventType="touchUpInside" id="vZf-YM-1s8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5N-F3-CDi">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Hangup">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.6412618886" green="0.1652867613" blue="0.1501641407" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hangup" destination="6" eventType="touchUpInside" id="6hB-CI-McM"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.66666666666666663" green="0.25408956775273173" blue="0.2383666886828745" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="RRP-uL-Pb7" firstAttribute="trailing" secondItem="O5N-F3-CDi" secondAttribute="trailing" type="default" id="4dp-9I-fEY"/>
+                            <constraint firstItem="ENI-yx-V0Q" firstAttribute="top" secondItem="fwD-k3-Jm8" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="64V-SH-m71"/>
+                            <constraint firstItem="ENI-yx-V0Q" firstAttribute="trailing" secondItem="fwD-k3-Jm8" secondAttribute="trailing" type="default" id="8AV-fL-Aja"/>
+                            <constraint firstItem="fwD-k3-Jm8" firstAttribute="trailing" secondItem="eHa-dS-RCV" secondAttribute="trailing" type="default" id="BeD-Rg-yqK"/>
+                            <constraint firstItem="ErT-oD-hl1" firstAttribute="top" secondItem="7" secondAttribute="top" constant="95" id="CTy-4e-DqZ"/>
+                            <constraint firstItem="vTn-Hc-djQ" firstAttribute="leading" secondItem="TEI-Me-dDc" secondAttribute="leading" type="default" id="D1L-HA-9Vz"/>
+                            <constraint firstItem="TEI-Me-dDc" firstAttribute="top" secondItem="7" secondAttribute="top" constant="252" id="Efr-pm-744"/>
+                            <constraint firstItem="O5N-F3-CDi" firstAttribute="baseline" secondItem="ErT-oD-hl1" secondAttribute="baseline" type="default" id="LcX-Px-shH"/>
+                            <constraint firstItem="vTn-Hc-djQ" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="73" id="Oao-sF-HmY"/>
+                            <constraint firstItem="vTn-Hc-djQ" firstAttribute="leading" secondItem="ErT-oD-hl1" secondAttribute="leading" type="default" id="UFp-aV-PyL"/>
+                            <constraint firstItem="eHa-dS-RCV" firstAttribute="trailing" secondItem="TEI-Me-dDc" secondAttribute="trailing" type="default" id="UGy-XA-jKy"/>
+                            <constraint firstItem="RRP-uL-Pb7" firstAttribute="centerY" secondItem="vTn-Hc-djQ" secondAttribute="centerY" type="default" id="W6o-ln-lYc"/>
+                            <constraint firstItem="eHa-dS-RCV" firstAttribute="leading" secondItem="TEI-Me-dDc" secondAttribute="leading" type="default" id="YKs-NS-Oxi"/>
+                            <constraint firstItem="fwD-k3-Jm8" firstAttribute="leading" secondItem="eHa-dS-RCV" secondAttribute="leading" type="default" id="aGz-pc-kJn"/>
                             <constraint firstItem="12" firstAttribute="leading" secondItem="7" secondAttribute="leading" type="default" id="kyL-VC-rMY"/>
+                            <constraint firstItem="RRP-uL-Pb7" firstAttribute="top" secondItem="7" secondAttribute="top" constant="181" id="m9i-4d-ByI"/>
+                            <constraint firstItem="fwD-k3-Jm8" firstAttribute="top" secondItem="eHa-dS-RCV" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="o8C-Qm-C7A"/>
                             <constraint firstItem="12" firstAttribute="top" secondItem="7" secondAttribute="top" type="default" id="oQ7-QK-1Ab"/>
+                            <constraint firstItem="eHa-dS-RCV" firstAttribute="top" secondItem="TEI-Me-dDc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vfN-c2-MPC"/>
+                            <constraint firstItem="ENI-yx-V0Q" firstAttribute="leading" secondItem="fwD-k3-Jm8" secondAttribute="leading" type="default" id="wqw-7j-5Je"/>
+                            <constraint firstItem="RRP-uL-Pb7" firstAttribute="trailing" secondItem="TEI-Me-dDc" secondAttribute="trailing" type="default" id="yGH-s6-8yc"/>
                             <constraint firstItem="12" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" type="default" id="yf5-Bx-wHg"/>
                         </constraints>
                     </view>
@@ -70,9 +182,30 @@
             <point key="canvasLocation" x="368" y="182"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="phono-slide-icon57.png" width="57" height="57"/>
+    </resources>
     <classes>
-        <class className="IBUISceneExitPlaceholder" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBUISceneExitPlaceholder.h"/>
+        <class className="JiPFlipsideViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JiPFlipsideViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="call"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="hangup"/>
+                <relationship kind="action" name="key:"/>
+                <relationship kind="action" name="mute:"/>
+                <relationship kind="outlet" name="codec" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="JiPMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JiPMainViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="jira" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

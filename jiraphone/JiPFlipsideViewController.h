@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhonoNative.h"
 
 @class JiPFlipsideViewController;
 
@@ -14,10 +15,24 @@
 - (void)flipsideViewControllerDidFinish:(JiPFlipsideViewController *)controller;
 @end
 
-@interface JiPFlipsideViewController : UIViewController
+@interface JiPFlipsideViewController : UIViewController{
+    PhonoNative *phono;
+    PhonoPhone *phone;
+    PhonoCall *call;
+}
 
+@property (nonatomic,retain) IBOutlet UILabel *codec;
+@property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
+@property(nonatomic, copy) void (^backgroundNotifier)();
 @property (assign, nonatomic) id <JiPFlipsideViewControllerDelegate> delegate;
 
+- (IBAction)call;
+- (IBAction)hangup;
+- (IBAction)mute:(id) sender;
+
+
+
 - (IBAction)done:(id)sender;
+- (IBAction)key:(id)sender;
 
 @end

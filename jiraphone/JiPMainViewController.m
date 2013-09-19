@@ -13,11 +13,13 @@
 @end
 
 @implementation JiPMainViewController
-
+@synthesize jira;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSURLRequest *jiraURL = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://voxeolabs.atlassian.net/plugins/servlet/mobile#myjirahome"]];
+    [jira loadRequest:jiraURL];
+	// Do any additonal setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning

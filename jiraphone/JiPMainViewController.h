@@ -9,5 +9,6 @@
 #import "JiPFlipsideViewController.h"
 
 @interface JiPMainViewController : UIViewController <JiPFlipsideViewControllerDelegate>
+@property (nonatomic,retain) IBOutlet UIWebView *jira;
 
 @end
