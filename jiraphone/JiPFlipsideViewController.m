@@ -132,7 +132,8 @@
     NSArray *bits = [callee componentsSeparatedByString:@":"];
     
     NSString *user = [bits objectAtIndex:1];
-    NSString *dom = @"sip:";// [bits objectAtIndex:0];
+    
+    NSString *dom = [bits objectAtIndex:0];
     if ([phono sessionID] != nil){
         call = [[[PhonoCall alloc] initOutbound:user domain:dom] retain];
         call.secure = NO;

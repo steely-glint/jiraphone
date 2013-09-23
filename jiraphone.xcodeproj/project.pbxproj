@@ -19,7 +19,6 @@
 		2240CF1117E750710065C648 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2240CF0F17E750710065C648 /* MainStoryboard.storyboard */; };
 		2240CF1417E750710065C648 /* JiPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240CF1317E750710065C648 /* JiPMainViewController.m */; };
 		2240CF1717E750710065C648 /* JiPFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240CF1617E750710065C648 /* JiPFlipsideViewController.m */; };
-		2256E36417EB3CB200E4B1AA /* PhonoNative-i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2256E36217EB3CB200E4B1AA /* PhonoNative-i386.a */; };
 		2256E36617EB3CCC00E4B1AA /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2256E36517EB3CCC00E4B1AA /* CoreAudio.framework */; };
 		2256E36817EB3CE000E4B1AA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2256E36717EB3CE000E4B1AA /* Security.framework */; };
 		2256E36A17EB3E7E00E4B1AA /* ringback-uk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2256E36917EB3E7E00E4B1AA /* ringback-uk.mp3 */; };
@@ -30,6 +29,8 @@
 		2256E37417EB41C600E4B1AA /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2256E37317EB41C600E4B1AA /* CoreFoundation.framework */; };
 		2256E37617EB41D100E4B1AA /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2256E37517EB41D100E4B1AA /* CoreData.framework */; };
 		2256E37817EB41DE00E4B1AA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2256E37717EB41DE00E4B1AA /* SystemConfiguration.framework */; };
+		22948A4B17EB5CAC00F90C7A /* PhonoNative-arm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22948A4A17EB5CAC00F90C7A /* PhonoNative-arm.a */; };
+		22948A4D17EC4D6B00F90C7A /* PhonoNative-i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22948A4C17EC4D6B00F90C7A /* PhonoNative-i386.a */; };
 		22D8C78E17E9E20C00DBE698 /* phono-slide-icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D8C78D17E9E20C00DBE698 /* phono-slide-icon57.png */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +58,6 @@
 		2256E35E17EB3C7700E4B1AA /* PhonoMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhonoMessaging.h; sourceTree = "<group>"; };
 		2256E35F17EB3C7700E4B1AA /* PhonoNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhonoNative.h; sourceTree = "<group>"; };
 		2256E36017EB3C7700E4B1AA /* PhonoPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhonoPhone.h; sourceTree = "<group>"; };
-		2256E36217EB3CB200E4B1AA /* PhonoNative-i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "PhonoNative-i386.a"; path = "../../../phono/PhonoSDK-1.1/target/sdk/plugins/native-ios/PhonoNative-i386.a"; sourceTree = "<group>"; };
 		2256E36517EB3CCC00E4B1AA /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		2256E36717EB3CE000E4B1AA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2256E36917EB3E7E00E4B1AA /* ringback-uk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ringback-uk.mp3"; sourceTree = "<group>"; };
@@ -68,6 +68,8 @@
 		2256E37317EB41C600E4B1AA /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2256E37517EB41D100E4B1AA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2256E37717EB41DE00E4B1AA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22948A4A17EB5CAC00F90C7A /* PhonoNative-arm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "PhonoNative-arm.a"; path = "../../phono/PhonoSDK/target/sdk/plugins/native-ios/PhonoNative-arm.a"; sourceTree = "<group>"; };
+		22948A4C17EC4D6B00F90C7A /* PhonoNative-i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "PhonoNative-i386.a"; path = "../../phono/PhonoSDK/target/sdk/plugins/native-ios/PhonoNative-i386.a"; sourceTree = "<group>"; };
 		22D8C78D17E9E20C00DBE698 /* phono-slide-icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phono-slide-icon57.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22948A4D17EC4D6B00F90C7A /* PhonoNative-i386.a in Frameworks */,
+				22948A4B17EB5CAC00F90C7A /* PhonoNative-arm.a in Frameworks */,
 				2256E37817EB41DE00E4B1AA /* SystemConfiguration.framework in Frameworks */,
 				2256E37617EB41D100E4B1AA /* CoreData.framework in Frameworks */,
 				2256E37417EB41C600E4B1AA /* CoreFoundation.framework in Frameworks */,
@@ -85,7 +89,6 @@
 				2256E36C17EB415A00E4B1AA /* AudioToolbox.framework in Frameworks */,
 				2256E36817EB3CE000E4B1AA /* Security.framework in Frameworks */,
 				2256E36617EB3CCC00E4B1AA /* CoreAudio.framework in Frameworks */,
-				2256E36417EB3CB200E4B1AA /* PhonoNative-i386.a in Frameworks */,
 				2240CEF817E750710065C648 /* UIKit.framework in Frameworks */,
 				2240CEFA17E750710065C648 /* Foundation.framework in Frameworks */,
 				2240CEFC17E750710065C648 /* CoreGraphics.framework in Frameworks */,
@@ -108,7 +111,6 @@
 				2256E36917EB3E7E00E4B1AA /* ringback-uk.mp3 */,
 				2256E36717EB3CE000E4B1AA /* Security.framework */,
 				2256E36517EB3CCC00E4B1AA /* CoreAudio.framework */,
-				2256E36217EB3CB200E4B1AA /* PhonoNative-i386.a */,
 				2256E35B17EB3C7700E4B1AA /* Headers */,
 				2240CEFD17E750710065C648 /* jiraphone */,
 				2240CEF617E750710065C648 /* Frameworks */,
@@ -127,6 +129,8 @@
 		2240CEF617E750710065C648 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22948A4C17EC4D6B00F90C7A /* PhonoNative-i386.a */,
+				22948A4A17EB5CAC00F90C7A /* PhonoNative-arm.a */,
 				2240CEF717E750710065C648 /* UIKit.framework */,
 				2240CEF917E750710065C648 /* Foundation.framework */,
 				2240CEFB17E750710065C648 /* CoreGraphics.framework */,
@@ -205,6 +209,11 @@
 				CLASSPREFIX = JiP;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Tim Panton";
+				TargetAttributes = {
+					2240CEF317E750710065C648 = {
+						DevelopmentTeam = NV2YE3RNDS;
+					};
+				};
 			};
 			buildConfigurationList = 2240CEEF17E750710065C648 /* Build configuration list for PBXProject "jiraphone" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -332,15 +341,19 @@
 		2240CF1B17E750710065C648 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jiraphone/jiraphone-Prefix.pch";
 				INFOPLIST_FILE = "jiraphone/jiraphone-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../phono/PhonoSDK-1.1/target/sdk/plugins/native-ios\"",
+					"\\\"$(SRCROOT)/../../../phono/PhonoSDK-1.1/target/sdk/plugins/native-ios\\\"",
+					"/project2/github/phono/PhonoSDK/target/sdk/plugins/native-ios",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -348,15 +361,19 @@
 		2240CF1C17E750710065C648 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jiraphone/jiraphone-Prefix.pch";
 				INFOPLIST_FILE = "jiraphone/jiraphone-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../../../phono/PhonoSDK-1.1/target/sdk/plugins/native-ios\"",
+					"\\\"$(SRCROOT)/../../../phono/PhonoSDK-1.1/target/sdk/plugins/native-ios\\\"",
+					"/project2/github/phono/PhonoSDK/target/sdk/plugins/native-ios",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
