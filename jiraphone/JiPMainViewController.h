@@ -8,7 +8,12 @@
 
 #import "JiPFlipsideViewController.h"
 
-@interface JiPMainViewController : UIViewController <JiPFlipsideViewControllerDelegate>
+@interface JiPMainViewController : UIViewController <JiPFlipsideViewControllerDelegate, UIWebViewDelegate>
+{
+    NSString *me ; // name found in the jira page
+}
 @property (nonatomic,retain) IBOutlet UIWebView *jira;
+@property (nonatomic,retain) NSString  *me;
+
 
 @end

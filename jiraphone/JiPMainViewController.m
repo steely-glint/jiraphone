@@ -13,7 +13,7 @@
 @end
 
 @implementation JiPMainViewController
-@synthesize jira;
+@synthesize jira,me;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,6 +40,14 @@
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
     }
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSString *javaScript = @"document.getElementsByClassName('current-user-name')[0].innerHTML";
+    me = [[[NSString alloc] initWithString:[webView stringByEvaluatingJavaScriptFromString:javaScript] ] retain];
+    NSLog(@"I am %@\n", me);
+    
 }
 
 @end

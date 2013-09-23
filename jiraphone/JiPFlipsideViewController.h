@@ -15,17 +15,19 @@
 - (void)flipsideViewControllerDidFinish:(JiPFlipsideViewController *)controller;
 @end
 
-@interface JiPFlipsideViewController : UIViewController{
+@interface JiPFlipsideViewController : UIViewController <UIAlertViewDelegate,UIPickerViewDataSource, UIPickerViewDelegate>{
     PhonoNative *phono;
     PhonoPhone *phone;
     PhonoCall *call;
+    UIPickerView                *callPicker;
+    NSDictionary                     *availableCallees;
 }
 
 @property (nonatomic,retain) IBOutlet UILabel *codec;
 @property (nonatomic,retain) IBOutlet UIScrollView *scrollView;
-@property(nonatomic, copy) void (^backgroundNotifier)();
 @property (assign, nonatomic) id <JiPFlipsideViewControllerDelegate> delegate;
-
+@property (nonatomic, retain) IBOutlet UIPickerView *callPicker;
+@property (nonatomic, retain) NSDictionary *availableCallees;
 - (IBAction)call;
 - (IBAction)hangup;
 - (IBAction)mute:(id) sender;
